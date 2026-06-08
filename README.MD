@@ -40,7 +40,7 @@ Depois disso, o projeto já estará pronto para ser executado localmente.
 Para executar os testes unitários localmente, utilize o comando:
 
 ```bash
-pytest --cov=src --cov-report=term-missing --cov-fail-under=70
+python -m pytest --cov=src --cov-report=term-missing --cov-fail-under=70
 ```
 
 Esse comando procura automaticamente os arquivos de teste dentro da pasta `tests/` e executa os testes definidos no projeto.

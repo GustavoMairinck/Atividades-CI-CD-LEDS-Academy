@@ -71,8 +71,4 @@ As etapas do pipeline são:
 1. Clonar o repositório usando `actions/checkout@v4`;
 2. Configurar o Python 3.12 usando `actions/setup-python@v5`;
 3. Instalar as dependências do projeto a partir do arquivo `requirements.txt`;
-4. Executar os testes unitários com o comando:
-
-```bash
-pytest --verbose
-```
+4. Executar os testes unitários com o comando: `pytest --verbose`

@@ -1,1 +1,6 @@
-E296-487C
+def somar(a: float, b: float) -> float:
+    return a + b
+
+
+def multiplicar(a: float, b: float) -> float:
+    return a * b

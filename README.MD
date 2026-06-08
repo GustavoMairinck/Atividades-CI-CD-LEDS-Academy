@@ -72,3 +72,18 @@ As etapas do pipeline são:
 2. Configurar o Python 3.12 usando `actions/setup-python@v5`;
 3. Instalar as dependências do projeto a partir do arquivo `requirements.txt`;
 4. Executar os testes unitários com o comando: `pytest --cov=src --cov-report=term-missing --cov-fail-under=70`
+
+
+## Como interpretar os resultados da aba Actions
+
+Na aba **Actions** do GitHub, é possível acompanhar a execução automática do workflow de testes.
+
+Quando a execução aparece com status verde, significa que o pipeline foi executado com sucesso. Isso indica que as dependências foram instaladas corretamente, os testes passaram e a cobertura mínima exigida foi atingida.
+
+Quando a execução aparece com status vermelho, significa que ocorreu algum erro durante o processo. Esse erro pode estar relacionado à instalação das dependências, falha em algum teste ou cobertura abaixo do mínimo definido.
+
+## Cobertura atingida pelo projeto
+
+A cobertura mínima exigida pelo workflow é de **70%**.
+
+Neste projeto, a cobertura atingida foi de **100%**, pois todas as funções criadas na pasta `src/` foram testadas com sucesso.

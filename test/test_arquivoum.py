@@ -1,4 +1,4 @@
-from arquivoum import somar, multiplicar
+from src.arquivoum import somar, multiplicar
 
 
 def test_somar():

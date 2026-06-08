@@ -37,10 +37,10 @@ Depois disso, o projeto já estará pronto para ser executado localmente.
 
 ## Como rodar os testes
 
-Para executar os testes unitários, utilize o comando:
+Para executar os testes unitários localmente, utilize o comando:
 
 ```bash
-pytest --verbose
+pytest --cov=src --cov-report=term-missing --cov-fail-under=70
 ```
 
 Esse comando procura automaticamente os arquivos de teste dentro da pasta `tests/` e executa os testes definidos no projeto.
@@ -71,4 +71,4 @@ As etapas do pipeline são:
 1. Clonar o repositório usando `actions/checkout@v4`;
 2. Configurar o Python 3.12 usando `actions/setup-python@v5`;
 3. Instalar as dependências do projeto a partir do arquivo `requirements.txt`;
-4. Executar os testes unitários com o comando: `pytest --verbose`
+4. Executar os testes unitários com o comando: `pytest --cov=src --cov-report=term-missing --cov-fail-under=70`
